@@ -1,0 +1,24 @@
+.page,
+.page__body {
+  height: 100%;
+  width: 100%;
+
+  .page-main {
+    flex-grow: 1;
+  }
+
+
+  .page__catalog {
+    .main-header::after {
+      display: none;
+    }
+
+    .main-nav__link {
+      color: $black;
+    }
+
+    .main-nav__item--current::after {
+      background-color: $basic-green;
+    }
+  }
+}
